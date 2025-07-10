@@ -52,4 +52,3 @@ jobs:
           version: ${{ github.sha }}
           folder: ${{ env.DEPLOYMENT_FOLDER }}
           config-file: .deploy-now/lichtspielzeit-website/config.yaml
-          action: upload
