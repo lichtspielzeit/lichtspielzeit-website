@@ -1,6 +1,21 @@
 # To better understand this file read this:
 # https://docs.ionos.space/docs/github-actions-customization/
 
+name: build
+
+on:
+  workflow_call:
+    inputs:
+      site-url:
+        required: true
+        type: string
+      branch-id:
+        required: true
+        type: string
+    secrets:
+      IONOS_API_KEY:
+        required: true
+
 name: "Deploy Now: Execute Build"
 
 on:
