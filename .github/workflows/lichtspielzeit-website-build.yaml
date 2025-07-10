@@ -43,6 +43,7 @@ jobs:
 # Please do not touch the following action
       - name: Store deployment content
         uses: ionos-deploy-now/artifact-action@v1
+        env: DEPLOYMENT_FOLDER: ./build
         with:
           api-key: ${{ secrets.IONOS_API_KEY }}
           service-host: api-eu.ionos.space
